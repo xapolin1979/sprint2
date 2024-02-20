@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+const mensaje1= async()=>{
+
+return new Promise((resolve) => {
+
+setTimeout(()=>{
+     resolve('Hola,soy 2 segundos')
+},2000)
+})
+}
+const mensaje2= async()=>{
+
+return new Promise((resolve) => {
+
+setTimeout(()=>{
+     resolve('Hola,soy 3 segundos')
+},3000)
+})
+}
+
+
+Promise.all([mensaje1(),mensaje2()])
+.then(res=> console.log(res))
+.cath(error=>console.error(error))
+
+
+
+
+    </script>
+</body>
+</html>

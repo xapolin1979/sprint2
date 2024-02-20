@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        const esperarISaludar =(name,callback)=>{
+
+              setTimeout(()=>{
+                   callback(name)
+            },2000)
+        }
+        const nombreSaludo=(name)=>{
+              console.log(`Saludos ${name}`)
+        }
+
+        esperarISaludar('Eloi',nombreSaludo);
+    </script>
+</body>
+</html>

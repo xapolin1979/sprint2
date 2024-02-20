@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const mensaje= async()=>{
+            
+            return new Promise((resolve, reject) => {
+                  
+                let input=prompt('Escribe algo');
+
+                if(input==="Hola"){
+
+                    setTimeout(()=>{
+                       resolve('resuelto')
+
+                    },2000)
+                }
+                else{
+                    reject('rechazado')
+                }
+                
+            })
+        }
+
+        mensaje().then(res=>{
+            console.log(res)
+        })
+    </script>
+</body>
+</html>

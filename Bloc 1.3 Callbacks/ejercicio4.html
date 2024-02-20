@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+let arrayNum=[1,2,3,4,5,6,7,8,9]
+        const processarElements=(array,callback)=>{
+              
+         for(let i=0;i<array.length; i++){
+               callback(array);
+            }
+          
+        }
+
+
+        const callbackArray=(array)=>{
+             console.log(array)
+        }
+
+        processarElements(arrayNum,callbackArray)      
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numero = 9;
+      let resultado =
+        numero > 0 ? "positivo" : numero < 0 ? "negativo" : "es 0";
+
+      console.log(resultado);
+
+      const trobarMaxim = (a, b, c) => {
+        resultado =
+        a > b && a > c
+      ? `el numero ${a} es el mas alto`
+      : b > c
+      ? `el numero ${b} es el mas alto`
+      : a === b && a === c
+      ? `los tres números son iguales: ${a}`
+      : a === b
+      ? `el numero mayor es ${a} y esta repetido entre los parametros a y b`
+      : a === c
+      ? `el numero mayor es ${a} y esta repetido entre los parametros a y c`
+      : b === c
+      ? `el numero mayor es ${b} y esta repetido entre los parametros b y c`
+      : `El numero mayor es ${c}`;
+
+        console.log(resultado);
+      };
+      trobarMaxim(16,32,11);
+    </script>
+  </body>
+</html>

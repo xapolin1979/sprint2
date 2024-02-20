@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+
+let arrayNum=[ 1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9 ];
+
+const calcular=(...array)=> array.filter(num =>num >= 10).map(num => num*2).reduce((acumulador,num,indice)=>acumulador + num,)*2;
+
+console.log(calcular(...arrayNum));
+
+    </script>
+</body>
+</html>

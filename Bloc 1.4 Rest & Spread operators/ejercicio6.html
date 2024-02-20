@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        
+        const persona={
+            nombre:'Marc',
+            apellidos:'Gonzalez',
+            edad:33,
+        }
+        const direccion={
+            calle:'Valencia',
+            numero:'105',
+            piso:2,
+            puerta:3,
+            ciudad:'Barcelona'
+        }
+       
+        const usuario={
+            ...persona,
+            ...direccion,
+        }
+
+        console.log(usuario)
+
+    </script>
+</body>
+</html>
